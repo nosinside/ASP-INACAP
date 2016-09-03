@@ -4,3 +4,9 @@ c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\bin\Libr
 c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\bin\Libros.pdb
 c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\obj\Debug\Libros.dll
 c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\obj\Debug\Libros.pdb
+C:\Users\Johan\Documents\Visual Studio 2013\Projects\Libros\Libros\bin\Libros.dll.config
+C:\Users\Johan\Documents\Visual Studio 2013\Projects\Libros\Libros\bin\Libros.dll
+C:\Users\Johan\Documents\Visual Studio 2013\Projects\Libros\Libros\bin\Libros.pdb
+C:\Users\Johan\Documents\Visual Studio 2013\Projects\Libros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+C:\Users\Johan\Documents\Visual Studio 2013\Projects\Libros\Libros\obj\Debug\Libros.dll
+C:\Users\Johan\Documents\Visual Studio 2013\Projects\Libros\Libros\obj\Debug\Libros.pdb

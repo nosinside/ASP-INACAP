@@ -32,7 +32,7 @@ namespace Libros
         public string editorial { get; set; }
         public int cantidadPrestamos { get; set; }
         public int cantidadGlobalPrestamos { get; set; }
-        public bool prestado { get; set; }
+        public bool prestado {  get; set; }
         public bool deteriorado { get; set; }
         public int cantidadRestauraciones { get; set; }
 
@@ -47,11 +47,13 @@ namespace Libros
                     mensaje = "Libro ya prestado i/o deteriorado";
                     
                 }else{
-                    
                     this.cantidadPrestamos = cantidadPrestamos + 1;
+                    this.cantidadGlobalPrestamos = cantidadGlobalPrestamos + 1;
+                    this.prestado = true;
                     if (cantidadPrestamos >= 10)
-                        this.prestado = true;
+                        
                     {
+                        this.prestado = true;
                         deteriorado = true;
                     }
                     mensaje = "Libro prestado exitosamente";
@@ -62,19 +64,47 @@ namespace Libros
             return mensaje;
         }
 
-        public void devolverLibro(string _isbm){
+        public string devolverLibro(string _isbm){
 
+            string mensaje = "";
+            if (_isbm == isbm)
+            {
+                if (this.prestado)
+                {
+                    this.prestado = false;
+                    mensaje = "libro devuelto";
+                }
+                else
+                {
+                    mensaje = "Ya lo devolvieron o nunca se prestó";
+                }
+                
+            }
+            return mensaje;
         }
 
-        public void restaurarLibro(string _isbm){
-
+        public string restaurarLibro(string _isbm){
+            string mensaje= "";
+            if (_isbm == isbm)
+            {
+                if (deteriorado)
+                {
+                    cantidadPrestamos = 0;
+                    cantidadRestauraciones = cantidadRestauraciones + 1;
+                    deteriorado = false;
+                    mensaje = "Libro restaurado exitosamente, se ha restaurado " + cantidadRestauraciones + " veces";
+                }
+                else
+                {
+                    mensaje = "Libro no está deteriorado";
+                }
+            }
+            else
+            {
+                mensaje = "libro no existe";
+            }
+            return mensaje;
         }
-
-        //public chequearDisponibilidadLibro(string _isbm){
-        //    bool disponibilidad = false;
-        //
-        //    return disponibilidad;
-        //}
 
     }
 }

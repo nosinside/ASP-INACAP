@@ -10,13 +10,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <nav>
-        <a href="ingresoLibros.aspx">Ingreso de libros</a> | <a href="realizarPrestamo.aspx">Realizar prestamo</a> | <a href="restaurarLibro.aspx">Restaurar Libros</a> | <a href="resumenLibros.aspx">Resumen de Libros</a> |
+    <nav>
+        <a href="ingresoLibros.aspx">Ingreso de libros</a> | <a href="realizarPrestamo.aspx">Realizar prestamo</a> | <a href="restaurarLibro.aspx">Restaurar Libros</a> | <a href="resumenLibros.aspx">Resumen de Libros</a> | <a href="devolverLibro.aspx">Devolver libros</a>
     </nav>
         <section>
             <article>
                 <h1>Devolver Libro</h1>
-                <p>En esta sección, realizaremos devoluciones para los usuarios de Sistema.</p>
+                <p>En esta sección, realizaremos las devoluciones de los libros, para los Usuarios del sistema. Favor, ingresar el codigo ISBN del Libro.</p>
                 <p>
                     <asp:Label ID="lblISBM" runat="server" Text="ISBN"></asp:Label>
                 &nbsp;<asp:TextBox ID="txtISBM" runat="server"></asp:TextBox>
@@ -26,7 +26,7 @@
                     <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                 </p>
                 <p>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" />
+                    <asp:Button ID="btnIngresar" runat="server" OnClick="Button1_Click" Text="Ingresar" />
                 </p>
 
             </article>

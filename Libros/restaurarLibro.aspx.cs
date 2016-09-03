@@ -11,12 +11,15 @@ namespace Libros
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblMensaje.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            foreach(clsLibros aux in clsLibros.librero){
+                lblMensaje.Visible = true;
+                lblMensaje.Text = aux.restaurarLibro(txtISBM.Text);
+            }
         }
     }
 }

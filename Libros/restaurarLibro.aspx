@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
     <div>
         <nav>
-        <a href="ingresoLibros.aspx">Ingreso de libros</a> | <a href="realizarPrestamo.aspx">Realizar prestamo</a> | <a href="restaurarLibro.aspx">Restaurar Libros</a> | <a href="resumenLibros.aspx">Resumen de Libros</a> |
+        <a href="ingresoLibros.aspx">Ingreso de libros</a> | <a href="realizarPrestamo.aspx">Realizar prestamo</a> | <a href="restaurarLibro.aspx">Restaurar Libros</a> | <a href="resumenLibros.aspx">Resumen de Libros</a> | <a href="devolverLibro.aspx">Devolver libros</a>
     </nav>
         <section>
             <article>
@@ -26,7 +26,7 @@
                     <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                 </p>
                 <p>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" />
+                    <asp:Button ID="btnIngresar" runat="server" OnClick="Button1_Click" Text="Ingresar" />
                 </p>
 
             </article>
