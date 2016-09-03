@@ -1,0 +1,6 @@
+c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\bin\Libros.dll.config
+c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\bin\Libros.dll
+c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\bin\Libros.pdb
+c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\obj\Debug\Libros.dll
+c:\users\17566234-0\documents\visual studio 2013\Projects\Libros\Libros\obj\Debug\Libros.pdb
